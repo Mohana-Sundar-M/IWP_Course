@@ -1,54 +1,57 @@
+/* Reset & base */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
-/* Base section style */
+/* Section styling */
 .box {
   position: relative;
+  background: #eee;
   border: 1px solid #000;
-  background: #f5f5f5;
-  padding: 40px 20px 20px; /* top padding leaves space for title */
-  float: left;
-  width: 100%; /* mobile default */
+  padding: 50px 20px 20px;   /* extra top padding so text doesn’t overlap title */
   margin: 10px;
+  float: left;
+  width: 100%;              /* mobile default */
 }
 
 .title {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 5px 15px;
   border: 1px solid #000;
-  color: #fff;
+  padding: 5px 15px;
   font-weight: bold;
+  color: #fff;
 }
 
-/* Different title colors */
-.chicken { background: #e67e22; }
-.beef    { background: #c0392b; }
-.sushi   { background: #16a085; }
+/* Individual colors for each title */
+.chicken { background-color: #e67e22; } /* orange */
+.beef    { background-color: #c0392b; } /* red   */
+.sushi   { background-color: #f1c40f; color: #000; } /* yellow with black text */
 
-/* ======= Tablet: 768–991px ======= */
+/* ===== Tablet view: 768–991px ===== */
 @media (min-width: 768px) and (max-width: 991px) {
   .box {
     width: 48%;
   }
   .box:nth-child(3) {
-    width: 98%; /* full width for third section */
+    width: 98%; /* third section full width */
   }
 }
 
-/* ======= Desktop: ≥992px ======= */
+/* ===== Desktop view: 992px and up ===== */
 @media (min-width: 992px) {
   .box {
     width: 31%;
