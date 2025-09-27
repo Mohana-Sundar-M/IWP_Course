@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Base section style */
+.box {
+  position: relative;
+  border: 1px solid #000;
+  background: #f5f5f5;
+  padding: 40px 20px 20px; /* top padding leaves space for title */
+  float: left;
+  width: 100%; /* mobile default */
+  margin: 10px;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 15px;
+  border: 1px solid #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Different title colors */
+.chicken { background: #e67e22; }
+.beef    { background: #c0392b; }
+.sushi   { background: #16a085; }
+
+/* ======= Tablet: 768–991px ======= */
+@media (min-width: 768px) and (max-width: 991px) {
+  .box {
+    width: 48%;
+  }
+  .box:nth-child(3) {
+    width: 98%; /* full width for third section */
+  }
+}
+
+/* ======= Desktop: ≥992px ======= */
+@media (min-width: 992px) {
+  .box {
+    width: 31%;
+  }
+}
