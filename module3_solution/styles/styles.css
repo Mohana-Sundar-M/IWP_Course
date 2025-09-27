@@ -1,0 +1,54 @@
+/* Base page font similar to the mockup */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f8f8f8; /* light page background */
+  color: #333;
+}
+
+/* Gray content box with subtle border and shadow */
+/* Gray content box with subtle border and shadow */
+.menu-box {
+  background: #eaeaea;           /* soft gray like the mockup */
+  border: 1px solid #bfbfbf;     /* slightly darker border */
+  padding: 25px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  /* Remove min-height so box fits content */
+  /* min-height: 600px; */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08); /* gentle depth */
+  text-align: left;               /* align text to left */
+}
+
+/* Section heading inside the box */
+.menu-box h3 {
+  text-align: center;               /* left-align heading */
+  margin-top: 0;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+
+/* Page main heading */
+h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #2d2d2d;
+}
+
+/* Navbar tweaks for a clean flat look */
+.navbar {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #333 !important;
+}
+
+/* Collapsed menu full width and centered text */
+.navbar-nav > li > a {
+  padding: 15px 0;
+  font-weight: 600;
+  color: #333 !important;
+}
